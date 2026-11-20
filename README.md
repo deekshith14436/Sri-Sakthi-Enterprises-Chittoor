@@ -1,5 +1,3 @@
-
-cat > README.md <<'EOF'
 # Sri Sakthi Enterprises – Chittoor
 
 ## About the Project
@@ -12,15 +10,13 @@ The main idea behind this project was to bring basic business activities into on
 
 ## What the Application Does
 
-The application has four main sections:
-
 **1. Dashboard**
 
 The dashboard gives an overview of the business. It displays the total number of products, available stock, low-stock items, inventory value and sales revenue.
 
 **2. Inventory Management**
 
-Users can add new products, view existing products, update product information and delete products when required. Product details include name, brand, category, price and quantity.
+Users can add new products, view existing products, update product information and delete products when required.
 
 **3. Sales Management**
 
@@ -30,7 +26,7 @@ Users can record sales by selecting a product, entering the customer name and sp
 
 I added a simple business assistant where users can ask questions about their inventory, sales and customers.
 
-For example:
+Example questions:
 - Show my inventory.
 - Which products are low in stock?
 - What is my total revenue?
@@ -47,30 +43,9 @@ The current version uses Python keyword-based question detection and database qu
 - **Database Integration:** SQLAlchemy
 - **API Requests:** Axios
 
-## Project Structure
-
-```text
-Sri-Sakthi-Enterprises-Chittoor/
-|
-|-- backend/
-|   |-- main.py
-|   |-- database.py
-|   |-- models.py
-|
-|-- frontend/
-|   |-- public/
-|   |-- src/
-|   |-- package.json
-|
-|-- .gitignore
-|-- README.md
-```
-
 ## Running the Project Locally
 
 **Backend**
-
-Open a terminal and run:
 
 ```bash
 cd backend
@@ -80,13 +55,11 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 
-The backend will run at:
-
-http://127.0.0.1:8000
+Backend URL: http://127.0.0.1:8000
 
 **Frontend**
 
-Open another terminal and run:
+Open another terminal:
 
 ```bash
 cd frontend
@@ -94,9 +67,7 @@ npm install
 npm run dev
 ```
 
-Open the local URL displayed in the terminal. Usually:
-
-http://localhost:5173
+Frontend URL: http://localhost:5173
 
 ## What I Learned
 
@@ -108,10 +79,26 @@ I also understood how frontend and backend components communicate, how to manage
 
 I would like to add user login, better sales reports, automated restocking alerts and more advanced AI-based business analysis in future versions.
 
+## Application Screenshots
+
+### Dashboard
+![Dashboard](screenshots/DASHBOARD.png)
+
+### Inventory Management
+![Inventory Management](screenshots/INVENTORY.png)
+
+### Sales Management
+![Sales Management](screenshots/SALES.png)
+
+### AI Business Assistant
+![AI Business Assistant](screenshots/AI-ASSISTANT.png)
+
 ## Developed By
 
 Deekshith Reddy
 
 GitHub: https://github.com/deekshith14436
 
-EOF
+---
+
+Developed as an individual project using a real-world small-business scenario.
